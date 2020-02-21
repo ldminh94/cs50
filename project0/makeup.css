@@ -1,0 +1,46 @@
+body {
+    background-color: lightgrey;
+
+}
+
+div 
+{
+    background-color: bisque;
+}
+.name{
+    
+}
+
+
+#inside-div, #social-media{
+    font-family: 'Nunito','Roboto Condensed';
+    margin: 0 auto;
+    width: 200px;
+    background-color: inherit; /* this says that inside-div will inherit bgcolor form its parent, which is the body */
+   
+}
+
+
+
+.social-icon{
+    width: 50px;
+}
+
+/* centered the social media icons */
+#social-media table{
+    margin: 0 auto;
+}
+
+.name {
+    font-family: 'Roboto Condensed';
+    font-size: 25px;
+}
+.profilePic
+{
+    display: block;
+    margin: auto;
+    padding-bottom: 5px;
+    width: 200px;
+    height: 190px;
+    border-radius: 100%
+}

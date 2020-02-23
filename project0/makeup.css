@@ -1,38 +1,31 @@
-body {
-    background-color: lightgrey;
-
-}
-
-div 
-{
-    background-color: bisque;
-}
-.name{
+header {
+    font-family: 'Nunito';
+    color: dark;
+    text-align: center;
+    background-color: #c6dce9;
+    border-radius: 5px;
+    height:80px;
+    
     
 }
+body {
+    background-color: white;
+
+}
 
 
-#inside-div, #social-media{
+#inside-div{
     font-family: 'Nunito','Roboto Condensed';
     margin: 0 auto;
     width: 200px;
-    background-color: inherit; /* this says that inside-div will inherit bgcolor form its parent, which is the body */
    
 }
 
 
 
-.social-icon{
-    width: 50px;
-}
-
-/* centered the social media icons */
-#social-media table{
-    margin: 0 auto;
-}
 
 .name {
-    font-family: 'Roboto Condensed';
+    font-family: 'Nunito';
     font-size: 25px;
 }
 .profilePic
@@ -43,4 +36,183 @@ div
     width: 200px;
     height: 190px;
     border-radius: 100%
+}
+
+#buttonClick
+{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.buttonStyle{
+    margin: 0px 50px 0px 0px;
+    
+}
+
+button {
+    font-family: 'Roboto Condensed';
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+    padding: 0px;
+    
+}
+
+button:hover{
+    background-color: #2fa4bb;
+    color:white;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 50px 0px;
+}
+
+footer{
+    font-family: 'Nunito';
+    color: dark;
+    text-align: center;
+    background-color: #c6dce9;
+    border-radius: 2px;
+    /* Push the footer to the very bottom */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+i{
+    color: grey;
+    padding: 10px 5px 10px;
+}
+
+i:hover{
+    color: white;
+}
+
+h4
+{   
+    font-family: 'Vollkorn';
+    color: #1E5162;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 0px 0px 0px;
+    margin: 0px 0px 3px 0px;
+}
+
+
+
+h2 {
+    font-family: 'Unica One';
+    color: #cc3311;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.section-deco::before
+{
+
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f0e7";
+    display: block;
+    
+}
+
+.year
+{
+    /* format the text */
+    font-style: italic;
+    font-size: 13px;
+}
+
+.year::after{
+    content: '---';
+    display: block;
+}
+.content{
+    width: 500px;
+}
+p{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 350px;
+    height: auto;
+    text-align: left;
+}
+
+.archived {
+  height: 15px;
+  width: 15px;
+  background-color: #ffcc99;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+}
+
+.notArchived
+{ height: 15px;
+  width: 15px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+}
+
+.title
+{
+    font-size: 20px;
+    font-weight:  600;
+}
+
+.inside-content
+{
+    font-weight: 200;
+    font-style: italic;
+}
+
+.subscript::after
+{
+    content: ' /native';
+    font-size: 14px;
+}
+
+
+/* define style for smaller screen */
+@media (max-width: 600px ){
+    .content{
+        width: 350px;
+    }
+    #buttonClick {
+        display: block;
+   
+        
+    }
+    button{
+        display: block;
+        margin: auto;
+        width: 180px;
+        height: 50px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-size: 18px;
+
+   
+    }
+    
+    #inside-div{
+        padding: 0px 0px 50px 0px;
+    }
+    
 }
